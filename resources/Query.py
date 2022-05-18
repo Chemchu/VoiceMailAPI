@@ -2,7 +2,7 @@ from pickle import TRUE
 from flask import jsonify
 from flask_cors import cross_origin
 from flask_restful import Resource, request
-from gmailAPIFunctions.read import read
+from gmailAPIFunctions.gmailAPI import getMessages
 
 from nltkFunctions.NLTKFunctions import NLTKFunctions
 
@@ -32,12 +32,11 @@ class Query(Resource):
         intention = nltkF.GetRequestIntention(query)
 
         # Ejecutar lógica de nltk
-        sentimiento = nltkF.GetSentimientoValue(
-            "Qué felicidad! Te quiero, eres muy divertido")
+        sentimiento = nltkF.GetSentimientoValue(query)
 
         print(sentimiento)
 
         # Hacer uso del API de Gmail
-        # read(token)
+        getMessages(token=token, count=10)
 
         return {'message': 'Este es el endpoint encargado de recibir las querys y ejecutar los algoritmos PV mediante NLTK', 'successful': True}
