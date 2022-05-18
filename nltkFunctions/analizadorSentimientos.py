@@ -1,5 +1,5 @@
-import string
 import os
+import string
 from nltk.corpus import stopwords
 from nltk.tokenize import sent_tokenize, word_tokenize
 from tipos.sentimientos import Sentimientos
