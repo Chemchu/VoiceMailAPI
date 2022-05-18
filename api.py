@@ -9,8 +9,8 @@ import sys
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
 app.config['CORS_HEADERS'] = 'Content-Type'
-CORS(app, support_credentials=True)
 api = Api(app)
+CORS(app, support_credentials=True)
 
 api.add_resource(Bienvenido, '/')
 api.add_resource(Query, '/query')

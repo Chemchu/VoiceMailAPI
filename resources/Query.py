@@ -2,7 +2,7 @@ from pickle import TRUE
 from flask import jsonify
 from flask_cors import cross_origin
 from flask_restful import Resource, request
-from gmailAPIFunctions.gmailAPI import getMessages
+from gmailAPIFunctions.gmailAPI import createEmail, getMessages, sendEmail
 
 from nltkFunctions.NLTKFunctions import NLTKFunctions
 
@@ -13,7 +13,7 @@ class Query(Resource):
     def get(self):
         return {'message': 'Este es el endpoint encargado de recibir las querys y ejecutar los algoritmos PV mediante NLTK', 'successful': True}
 
-    @cross_origin(supports_credentials=True)
+    @cross_origin(supports_credentials=True, allow_headers='*')
     def post(self):
         jsonRequest = request.json
 
@@ -37,6 +37,8 @@ class Query(Resource):
         print(sentimiento)
 
         # Hacer uso del API de Gmail
-        getMessages(token=token, count=10)
+        getMessages(token=token, count=1)
+        createEmail(token=token, subject="Probando",
+                    text="Carlos sexy", to="gustavolee26@gmail.com")
 
         return {'message': 'Este es el endpoint encargado de recibir las querys y ejecutar los algoritmos PV mediante NLTK', 'successful': True}

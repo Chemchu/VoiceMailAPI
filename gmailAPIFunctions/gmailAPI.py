@@ -100,9 +100,9 @@ def getMessage(token, message_id):
     return messages_dict
 
 
-@cross_origin(supports_credentials=True)
 def getMessages(token, count):
     service = CreateService(token)
+
     i = 0
     if (count == None):
         count = 1000
