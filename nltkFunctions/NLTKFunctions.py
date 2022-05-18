@@ -2,8 +2,13 @@ import os
 import string
 from nltk.corpus import stopwords
 from nltk.tokenize import sent_tokenize, word_tokenize
+from nltkFunctions.classifier import classify
+from tipos.intentions import Intention
 from tipos.sentimientos import Sentimientos
 import nltk
+import re
+from unicodedata import normalize
+
 nltk.download('stopwords')
 nltk.download('punkt')
 
@@ -14,8 +19,13 @@ class NLTKFunctions:
     def __init__(self):
         self.stop_words = stopwords.words('spanish')
 
-    def GetRequestIntention(self, texto: str):
-        return
+    def GetRequestIntention(self, texto: str) -> Intention:
+        texto = re.sub(
+            r"([^n\u0300-\u036f]|n(?!\u0303(?![\u0300-\u036f])))[\u0300-\u036f]+", r"\1",
+            normalize("NFD", texto), 0, re.I
+        )
+        classify(texto, show_details=True)
+        return Intention.BORRAR_CORREO
 
     def GetSentimientoValue(self, texto: str) -> Sentimientos:
         full_path = os.path.realpath(__file__)

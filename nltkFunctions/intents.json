@@ -1,0 +1,242 @@
+[
+    {
+        "class": "crearCorreo",
+        "sentence": "Escribe un correo"
+    },
+    {
+        "class": "crearCorreo",
+        "sentence": "Escribe esto"
+    },
+    {
+        "class": "crearCorreo",
+        "sentence": "Escribe lo siguiente"
+    },
+    {
+        "class": "crearCorreo",
+        "sentence": "Envia un correo"
+    },
+    {
+        "class": "crearCorreo",
+        "sentence": "Envia un mensaje"
+    },
+    {
+        "class": "crearCorreo",
+        "sentence": "Enviame un mensaje"
+    },
+    {
+        "class": "crearCorreo",
+        "sentence": "Enviame un correo electronico"
+    },
+    {
+        "class": "crearCorreo",
+        "sentence": "Enviar un mensaje"
+    },
+    {
+        "class": "crearCorreo",
+        "sentence": "Enviar un correo"
+    },
+    {
+        "class": "crearCorreo",
+        "sentence": "Envia un correo electronico"
+    },
+    {
+        "class": "crearCorreo",
+        "sentence": "Escribe este correo"
+    },
+    {
+        "class": "crearCorreo",
+        "sentence": "Vamos a escribir un correo"
+    },
+    {
+        "class": "crearCorreo",
+        "sentence": "Enviar"
+    },
+    {
+        "class": "crearCorreo",
+        "sentence": "Escribir"
+    },
+    {
+        "class": "borrarCorreo",
+        "sentence": "Borra un correo"
+    },
+    {
+        "class": "borrarCorreo",
+        "sentence": "Borrame un correo"
+    },
+    {
+        "class": "borrarCorreo",
+        "sentence": "Borrame un mensaje"
+    },
+    {
+        "class": "borrarCorreo",
+        "sentence": "Borrame un email"
+    },
+    {
+        "class": "borrarCorreo",
+        "sentence": "Borrame un gmail"
+    },
+    {
+        "class": "borrarCorreo",
+        "sentence": "Elimina un correo"
+    },
+    {
+        "class": "borrarCorreo",
+        "sentence": "Deshacerse de un correo"
+    },
+    {
+        "class": "borrarCorreo",
+        "sentence": "Borrar"
+    },
+    {
+        "class": "borrarCorreo",
+        "sentence": "Eliminar"
+    },
+    {
+        "class": "borrarCorreo",
+        "sentence": "Quitar un correo"
+    },
+    {
+        "class": "borrarCorreo",
+        "sentence": "Quitar"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Leer un correo"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Abrir un correo"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Leeme un correo"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Leer un email"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Abrir un email"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Leeme un email"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Leer un mensaje"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Leer mensaje"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Leer email"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Leer correo"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Abrir mensaje"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Abrir email"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Abrir correo"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Ver un correo"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Ver un correo"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Ver un correo"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Ver un email"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Ver un email"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Ver un email"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Ver un mensaje"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Ver mensaje"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Ver email"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Ver correo"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Abrir mensaje"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Ver email"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Ver correo"
+    },
+    {
+        "class": "clasificarCorreo",
+        "sentence": "Mueve un correo"
+    },
+    {
+        "class": "clasificarCorreo",
+        "sentence": "Clasifica un correo"
+    },
+    {
+        "class": "clasificarCorreo",
+        "sentence": "Mover correo"
+    },
+    {
+        "class": "clasificarCorreo",
+        "sentence": "Clasificar correo"
+    },
+    {
+        "class": "desclasificarCorreo",
+        "sentence": "Eliminar label de un correo"
+    },
+    {
+        "class": "desclasificarCorreo",
+        "sentence": "Borrar un label de un correo"
+    },
+    {
+        "class": "desclasificarCorreo",
+        "sentence": "Desclasificar un correo"
+    },
+    {
+        "class": "desclasificarCorreo",
+        "sentence": "Eliminar correo de carpeta"
+    },
+    {
+        "class": "desclasificarCorreo",
+        "sentence": "Eliminar un correo de una carpeta"
+    }
+]

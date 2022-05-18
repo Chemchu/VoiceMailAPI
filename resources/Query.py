@@ -4,7 +4,7 @@ from flask_cors import cross_origin
 from flask_restful import Resource, request
 from gmailAPIFunctions.read import read
 
-from nltkFunctions.analizadorSentimientos import NLTKFunctions
+from nltkFunctions.NLTKFunctions import NLTKFunctions
 
 
 class Query(Resource):
@@ -25,10 +25,13 @@ class Query(Resource):
         if query is None:
             return {'message': 'El query no puede estar vacio', 'successful': False}
 
+        # Creando la clase encargada de las funciones en NLTK
+        nltkF = NLTKFunctions()
+
         # Entender la petición
+        intention = nltkF.GetRequestIntention(query)
 
         # Ejecutar lógica de nltk
-        nltkF = NLTKFunctions()
         sentimiento = nltkF.GetSentimientoValue(
             "Qué felicidad! Te quiero, eres muy divertido")
 
