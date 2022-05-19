@@ -16,6 +16,7 @@ class Query(Resource):
     @cross_origin(supports_credentials=True, allow_headers='*')
     def post(self):
         jsonRequest = request.json
+        intention = None
 
         token = jsonRequest["token"]
         if token is None:
@@ -25,11 +26,19 @@ class Query(Resource):
         if query is None:
             return {'message': 'El query no puede estar vacio', 'successful': False}
 
+        steps = jsonRequest["steps"]
+        if steps is None:
+            # Entender la petición
+            intention = nltkF.GetRequestIntention(query)
+        else:
+            intention = None
+
+        if intention is None:
+            # Hacer logica aqui <-------------
+            pass
+
         # Creando la clase encargada de las funciones en NLTK
         nltkF = NLTKFunctions()
-
-        # Entender la petición
-        intention = nltkF.GetRequestIntention(query)
 
         # Ejecutar lógica de nltk
         sentimiento = nltkF.GetSentimientoValue(query)

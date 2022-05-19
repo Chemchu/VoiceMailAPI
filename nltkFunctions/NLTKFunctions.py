@@ -51,7 +51,6 @@ class NLTKFunctions:
             if word in diccionario:
                 puntuacion = puntuacion + int(diccionario.get(word))
 
-        #print ("Rating:", rating, "\n")
         if puntuacion == 0:
             return Sentimientos.NEUTRAL
 
