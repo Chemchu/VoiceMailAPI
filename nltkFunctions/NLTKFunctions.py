@@ -20,14 +20,20 @@ class NLTKFunctions:
         self.stop_words = stopwords.words('spanish')
 
     def GetRequestIntention(self, texto: str):
-        texto = re.sub(
-            r"([^n\u0300-\u036f]|n(?!\u0303(?![\u0300-\u036f])))[\u0300-\u036f]+", r"\1",
-            normalize("NFD", texto), 0, re.I
-        )
-        intentions = classify(texto, show_details=True)
-        intent = intentions[0][0]
+        print("############")
+        print(texto)
+        print("############")
+        try:
+            texto = re.sub(
+                r"([^n\u0300-\u036f]|n(?!\u0303(?![\u0300-\u036f])))[\u0300-\u036f]+", r"\1",
+                normalize("NFD", texto), 0, re.I
+            )
+            intentions = classify(texto, show_details=True)
+            intent = intentions[0][0]
+            return intent
 
-        return intent
+        except:
+            return "Error al reconocer el Intent"
 
     def GetSentimientoValue(self, texto: str) -> Sentimientos:
         full_path = os.path.realpath(__file__)

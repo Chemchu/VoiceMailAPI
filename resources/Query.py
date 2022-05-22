@@ -14,7 +14,8 @@ class Query(Resource):
     def get(self):
         return {'message': 'Este es el endpoint encargado de recibir las querys y ejecutar los algoritmos PV mediante NLTK', 'successful': True}
 
-    @cross_origin(supports_credentials=True, allow_headers='*')
+    # @cross_origin(supports_credentials=True, allow_headers='*')
+    @cross_origin(supports_credentials=True)
     def post(self):
         appManager = AppManager()
         nltkF = NLTKFunctions()
@@ -31,20 +32,19 @@ class Query(Resource):
         steps = jsonRequest["steps"]
         intent = jsonRequest["intent"]
         if intent is None:
-            # Entender la petición
-            intention = nltkF.GetRequestIntention(query)
+            intention = nltkF.GetRequestIntention(texto=query[len(query) - 1])
             response = appManager.IndentificarAccion(
-                token=token, intent=intention, steps=[])
+                token=token, intent=intention, steps=[], query=query)
             return {'steps': [response], "intent": intention, 'successful': True}
         else:
-            if steps is None:
+            if len(steps) is 0:
                 response = appManager.IndentificarAccion(
-                    token=token, intent=intent, steps=[])
+                    token=token, intent=intent, steps=[], query=query)
                 return {'steps': [response], "intent": intent, 'successful': True}
 
             else:
                 response = appManager.IndentificarAccion(
-                    token=token, intent=intent, steps=steps)
+                    token=token, intent=intent, steps=steps, query=query)
                 steps.append(response)
                 return {'steps': steps, "intent": intent, 'successful': True}
 
