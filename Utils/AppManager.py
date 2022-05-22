@@ -30,10 +30,18 @@ class AppManager:
         if len(steps) == 2:
             return "¿Cuál es el contenido del correo?"
 
+        print(query)
+
+        correoDestinatarioLN = query[1].split("arroba")
+        destinatarioIzquierda = correoDestinatarioLN[0].split()
+        destinatarioDerecha = correoDestinatarioLN[1].split()
+
+        destinatario = ''.join([str(elem) for elem in destinatarioIzquierda])
+        destinatario = destinatario + "@" + \
+            ''.join([str(elem) for elem in destinatarioDerecha])
+
         # Enviar correo al destinatario
-        # createEmail(token=token, subject=query[2],
-        #             text=query[3], to=query[1])
         createEmail(token=token, subject=query[2],
-                    text=query[3], to="gustavolee26@gmail.com")
+                    text=query[3], to=destinatario)
 
         return "DONE"
