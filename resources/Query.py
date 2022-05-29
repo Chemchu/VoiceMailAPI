@@ -31,6 +31,7 @@ class Query(Resource):
 
         steps = jsonRequest["steps"]
         intent = jsonRequest["intent"]
+
         if intent is None:
             intention = nltkF.GetRequestIntention(texto=query[len(query) - 1])
             response = appManager.IndentificarAccion(

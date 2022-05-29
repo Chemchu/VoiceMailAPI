@@ -204,6 +204,22 @@
         "sentence": "Ver correo"
     },
     {
+        "class": "leerCorreo",
+        "sentence": "Lee un correo"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Ver un correo un correo"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Mirar un correo un correo"
+    },
+    {
+        "class": "leerCorreo",
+        "sentence": "Mirame un correo un correo"
+    },
+    {
         "class": "clasificarCorreo",
         "sentence": "Mueve un correo"
     },

@@ -13,21 +13,21 @@ class AppManager:
     def IndentificarAccion(self, token, intent, steps, query):
 
         # print("###########")
-        # print(Intention.CLASIFICAR_CORREO)
-        # print(Intention.CLASIFICAR_CORREO.value)
+        # print(Intention.LEER_CORREO)
+        # print(Intention.LEER_CORREO.value)
         # print(intent)
         # print("###########")
 
-        if intent == Intention.ESCRIBIR_CORREO.value:
+        if intent in Intention.ESCRIBIR_CORREO.value:
             return self.CrearCorreo(token, steps, query)
 
-        if intent == Intention.BORRAR_CORREO.value:
+        if intent in Intention.BORRAR_CORREO.value:
             return self.BorrarCorreo(token, steps, query)
 
-        if intent == Intention.CLASIFICAR_CORREO.value:
+        if intent in Intention.CLASIFICAR_CORREO.value:
             return self.ClasificarCorreos(token, steps, query)
 
-        if intent == Intention.LEER_CORREO.value:
+        if intent in Intention.LEER_CORREO.value:
             return self.LeerCorreo(token, steps, query)
 
     # def IndentificarQuerySentimientos(self, texto):
@@ -93,9 +93,9 @@ class AppManager:
                 pass
 
         if c == None:
-            return {"message": "Lo siento, no hay correos de esa persona", "successful": True}
+            return "Lo siento, no hay correos de esa persona"
 
-        return {"message": c["message"], "successful": True}
+        return c["message"]
 
     def CrearCorreo(self, token, steps, query):
         if len(steps) <= 0:
