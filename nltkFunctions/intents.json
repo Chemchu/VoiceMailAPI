@@ -238,5 +238,177 @@
     {
         "class": "desclasificarCorreo",
         "sentence": "Eliminar un correo de una carpeta"
+    },
+    {
+        "class": "POSITIVO",
+        "sentence": "positivo"
+    },
+    {
+        "class": "POSITIVO",
+        "sentence": "correos positivos"
+    },
+    {
+        "class": "POSITIVO",
+        "sentence": "mensajes positivos"
+    },
+    {
+        "class": "POSITIVO",
+        "sentence": "correo positivo"
+    },
+    {
+        "class": "POSITIVO",
+        "sentence": "mensaje positivo"
+    },
+    {
+        "class": "POSITIVO",
+        "sentence": "alegres"
+    },
+    {
+        "class": "POSITIVO",
+        "sentence": "alegría"
+    },
+    {
+        "class": "POSITIVO",
+        "sentence": "correos alegres o felices"
+    },
+    {
+        "class": "POSITIVO",
+        "sentence": "correos con buenas intenciones"
+    },
+    {
+        "class": "POSITIVO",
+        "sentence": "mensajes buenos"
+    },
+    {
+        "class": "POSITIVO",
+        "sentence": "mensajes felices"
+    },
+    {
+        "class": "POSITIVO",
+        "sentence": "mensajes divertidos"
+    },
+    {
+        "class": "POSITIVO",
+        "sentence": "correos divertidos"
+    },
+    {
+        "class": "NEUTRAL",
+        "sentence": "correos normales"
+    },
+    {
+        "class": "NEUTRAL",
+        "sentence": "correos neutros"
+    },
+    {
+        "class": "NEUTRAL",
+        "sentence": "correos frecuentes"
+    },
+    {
+        "class": "NEUTRAL",
+        "sentence": "correos normalitos"
+    },
+    {
+        "class": "NEUTRAL",
+        "sentence": "los correos neutrales"
+    },
+    {
+        "class": "NEUTRAL",
+        "sentence": "mensajes normales"
+    },
+    {
+        "class": "NEUTRAL",
+        "sentence": "mensajes neutros"
+    },
+    {
+        "class": "NEUTRAL",
+        "sentence": "mensajes frecuentes"
+    },
+    {
+        "class": "NEUTRAL",
+        "sentence": "mensajes normalitos"
+    },
+    {
+        "class": "NEUTRAL",
+        "sentence": "los mensajes neutrales"
+    },
+    {
+        "class": "NEUTRAL",
+        "sentence": "los mensajes normales"
+    },
+    {
+        "class": "NEUTRAL",
+        "sentence": "los mensajes neutros"
+    },
+    {
+        "class": "NEUTRAL",
+        "sentence": "los mensajes frecuentes"
+    },
+    {
+        "class": "NEUTRAL",
+        "sentence": "los mensajes normalitos"
+    },
+    {
+        "class": "NEUTRAL",
+        "sentence": "los los mensajes neutrales"
+    },
+    {
+        "class": "NEGATIVO",
+        "sentence": "correos malos"
+    },
+    {
+        "class": "NEGATIVO",
+        "sentence": "correos negativos"
+    },
+    {
+        "class": "NEGATIVO",
+        "sentence": "correos desagradables"
+    },
+    {
+        "class": "NEGATIVO",
+        "sentence": "correos feos"
+    },
+    {
+        "class": "NEGATIVO",
+        "sentence": "los correos malos"
+    },
+    {
+        "class": "NEGATIVO",
+        "sentence": "mensajes malos"
+    },
+    {
+        "class": "NEGATIVO",
+        "sentence": "mensajes negativos"
+    },
+    {
+        "class": "NEGATIVO",
+        "sentence": "mensajes desagradables"
+    },
+    {
+        "class": "NEGATIVO",
+        "sentence": "mensajes feos"
+    },
+    {
+        "class": "NEGATIVO",
+        "sentence": "los mensajes malos"
+    },
+    {
+        "class": "NEGATIVO",
+        "sentence": "los mensajes negativos"
+    },
+    {
+        "class": "NEGATIVO",
+        "sentence": "los mensajes desagradables"
+    },
+    {
+        "class": "NEGATIVO",
+        "sentence": "los mensajes que sean malos"
+    },
+    {
+        "class": "NEGATIVO",
+        "sentence": "los mensajes que sean negativos"
+    },
+    {
+        "class": "NEGATIVO",
+        "sentence": "los los mensajes con negatividad"
     }
 ]

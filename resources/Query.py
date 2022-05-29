@@ -17,8 +17,8 @@ class Query(Resource):
     # @cross_origin(supports_credentials=True, allow_headers='*')
     @cross_origin(supports_credentials=True)
     def post(self):
-        appManager = AppManager()
         nltkF = NLTKFunctions()
+        appManager = AppManager(nltkF)
         jsonRequest = request.json
 
         token = jsonRequest["token"]
@@ -35,6 +35,8 @@ class Query(Resource):
             intention = nltkF.GetRequestIntention(texto=query[len(query) - 1])
             response = appManager.IndentificarAccion(
                 token=token, intent=intention, steps=[], query=query)
+
+            print(response)
             return {'steps': [response], "intent": intention, 'successful': True}
         else:
             if len(steps) is 0:

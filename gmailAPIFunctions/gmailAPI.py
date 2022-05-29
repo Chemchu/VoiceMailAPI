@@ -262,14 +262,14 @@ def createLabel(token, label_name):
 def moveToLabel(token, message_id, label_name):
     service = CreateService(token)
 
-    old_label = getMessageLabel(message_id)
+    old_label = getMessageLabel(token, message_id)
     if 'IMPORTANT' in old_label:
         old_label.remove('IMPORTANT')
     if 'SENT' in old_label:
         old_label.remove('SENT')
     #print ('Labels del mensaje:', old_label)
 
-    id_label = getLabelID(label_name)
+    id_label = getLabelID(token, label_name)
     #print ('Label al que se va a mover el mensaje:', label_name, '(ID:', id_label, ')')
 
     if id_label not in old_label:
