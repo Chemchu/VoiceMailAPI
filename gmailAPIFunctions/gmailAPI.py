@@ -108,8 +108,8 @@ def getMessages(token, count):
         count = 1000
     messages_dict = {}
     results = service.users().messages().list(userId='me').execute()
-    messages = results.get('messages', [])
 
+    messages = results.get('messages', [])
     for msg in messages:
         in_reply_bool = False
         references_bool = False
@@ -123,7 +123,6 @@ def getMessages(token, count):
             thread_id = txt['threadId']
             payload = txt['payload']
             headers = payload['headers']
-            #print (headers)
 
             for d in headers:
                 if d['name'] == 'Subject':
@@ -172,10 +171,9 @@ def getMessages(token, count):
             #print ('Body del mensaje ', i, ': ', body, '\n')
 
             i = i+1
-        except:
+        except Exception as e:
+            # print(e)
             pass
-
-    print(messages_dict)
     return messages_dict
 
 
